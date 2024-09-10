@@ -1,0 +1,5 @@
+pygit
+streamlit
+ollama
+transformers
+torch
