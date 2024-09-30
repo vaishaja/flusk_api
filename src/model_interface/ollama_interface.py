@@ -8,7 +8,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'prompt_def'))
 sys.path.insert(0, prompt_path)
  
-from prompt import code_review_prompt
+from prompt import code_review_prompt, code_review_prompt_static_analysis
+
  
 model_name = "codellama"
  
@@ -62,3 +63,15 @@ def codeReview_ollama_wrapper(file_list):
       comments.append(comment)
   return comments
  
+def code_review_ollama_wrapper_static_analysis(file_list):
+    comments = []
+    print("\n Review Started by CodeHarbour AI:\n ")
+    print(" Number of Files : \n ", len(file_list))
+    for file in file_list:
+        with open(file, "r") as fp:
+            prompt = code_review_prompt_static_analysis()
+            code = fp.read()
+            codellama_output = codeReview_ollama(code, prompt)
+            comment = f"CodeHarbour Analysis:\n {codellama_output}\n"
+            comments.append(comment)
+    return comments
