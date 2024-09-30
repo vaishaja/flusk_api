@@ -44,3 +44,58 @@ def code_review_prompt():
     Also, provide corrected source code with your comments incorporated.
     '''
     return prompt
+
+def code_review_prompt_static_analysis():
+
+    prompt = '''
+
+    "Please analyze the provided code for potential issues and present your findings in a clear and structured format. Organize the issues into sections with concise headings and detailed descriptions. For each issue, include the following:
+
+    1. Issue Description: A brief explanation of the problem.
+    2. Line Number: The specific line number where the issue occurs.
+    3. Proposed Solution: Recommendations a code on how to fix the issue.
+    Make sure to format the response with bullet points or numbered lists to enhance readability. Here’s the code for analysis:
+
+Review Aspects
+
+    Security Vulnerabilities:
+    1.Identify issues like buffer overflows, SQL injection, and cross-site scripting.
+    2.Suggest mitigation strategies.
+
+    Memory Management Issues:
+    1.Look for memory leaks and null pointer dereferences.
+    2.Recommend improvements to prevent these issues.
+
+    Concurrency Problems:
+    1.Check for race conditions and deadlocks.
+    2.Provide solutions for ensuring thread safety.
+
+    Performance Optimization:
+    1.Assess for inefficient algorithms and unnecessary loops.
+    2.Suggest specific performance enhancements.
+
+    Compliance with Coding Standards:
+    1.Evaluate adherence to standards like MISRA C or CERT C.
+    2.Identify non-compliance and suggest corrections.
+
+    Proper Resource Management:
+    1.Review management of resources (file handles, network connections).
+    2.Identify leaks and recommend better handling.
+
+    Logical Errors and Edge Cases:
+    1.Identify logical errors and unhandled edge cases.
+    2.Recommend robust handling strategies.
+
+    Robustness in Error Handling:
+    1.Evaluate the effectiveness of error handling.
+    2.Suggest improvements for fault tolerance.
+
+    Code Complexity and Maintainability:
+    1.Assess cyclomatic complexity and readability.
+    2.Identify areas for simplification and refactoring.
+
+    Adherence to Security Best Practices:
+    1.Check for security best practices like encryption and secure protocols.
+
+    Recommend improvements.
+    Conduct a comprehensive review of the code covering all the above aspects, identifying specific issues and providing actionable suggestions. '''

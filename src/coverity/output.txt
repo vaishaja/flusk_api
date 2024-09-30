@@ -1,0 +1,475 @@
+Root tag: errors
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 15991
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{gModuleTrcLevel[NPAPI_MPLS].u1TrcLevel <= 8}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 15999
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{u4VpnId >= 4100}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 15999
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{u4VpnId <= 6099U /* 4100 + (6099 - 4100) */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 15999
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Falling through to end of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 15999
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 37
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u4PwOutPort != 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u4PwOutPort >= 1803U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{pMplsHwVcInfo->u4PwOutPort <= 1802U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((pMplsHwVcInfo->u4PwOutPort >= 1803U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 1 */ && pMplsHwVcInfo->u4PwOutPort <= 1802U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 */) ? 1 : 0) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{pMplsHwVcInfo->u4PwOutPort <= 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u4PwOutPort > 128U /* 128 + 0 + 0 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((pMplsHwVcInfo->u4PwOutPort <= 0 || pMplsHwVcInfo->u4PwOutPort > 128U /* 128 + 0 + 0 */) ? 0 : 1) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((((pMplsHwVcInfo->u4PwOutPort <= 0 || pMplsHwVcInfo->u4PwOutPort > 128U /* 128 + 0 + 0 */) ? 0 : 1) == 1) ? gaCfaRemoteNpIndexMap[pMplsHwVcInfo->u4PwOutPort].u1Status : 0) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{pMplsHwVcInfo->u4PwOutPort <= 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u4PwOutPort > 193U /* 128 + 0 + 0 + (64 + 1) */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16002
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((pMplsHwVcInfo->u4PwOutPort <= 0 || pMplsHwVcInfo->u4PwOutPort > 193U /* 128 + 0 + 0 + (64 + 1) */) ? 0 : 1) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u4PwOutPort >= 1803U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{pMplsHwVcInfo->u4PwOutPort <= 1802U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((pMplsHwVcInfo->u4PwOutPort >= 1803U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 1 */ && pMplsHwVcInfo->u4PwOutPort <= 1802U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 */) ? 1 : 0) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{pMplsHwVcInfo->u4PwOutPort <= 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u4PwOutPort > 128U /* 128 + 0 + 0 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((pMplsHwVcInfo->u4PwOutPort <= 0 || pMplsHwVcInfo->u4PwOutPort > 128U /* 128 + 0 + 0 */) ? 0 : 1) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((((pMplsHwVcInfo->u4PwOutPort <= 0 || pMplsHwVcInfo->u4PwOutPort > 128U /* 128 + 0 + 0 */) ? 0 : 1) == 1) ? gaCfaRemoteNpIndexMap[pMplsHwVcInfo->u4PwOutPort].u1Status : 0) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{pMplsHwVcInfo->u4PwOutPort <= 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u4PwOutPort > 193U /* 128 + 0 + 0 + (64 + 1) */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16003
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{((pMplsHwVcInfo->u4PwOutPort <= 0 || pMplsHwVcInfo->u4PwOutPort > 193U /* 128 + 0 + 0 + (64 + 1) */) ? 0 : 1) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16004
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Falling through to end of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16040
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16045
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{i4RetVal != BCM_E_NONE}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16053
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16059
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{u4PwIfIndex >= 1603U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16059
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{u4PwIfIndex <= 1702U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16059
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Falling through to end of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16059
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16060
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{u4PwIfIndex != 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16063
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Falling through to end of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16076
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16079
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsPwVpMapInfo != NULL}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16095
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{gModuleTrcLevel[NPAPI_MPLS].u1TrcLevel & 8}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16103
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->i1CwStatus == 5}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16120
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{0 /* 128 + 0 + 0 == 0 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16120
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{((0 /* 128 + 0 + 0 == 0 */) ? gaCfaNpVlanHwIfMap[pMplsHwVcInfo->u4PwL3Intf - (136U /* 128 + 0 + 0 + 8 */)].u4HwEgrObjIntf : gaCfaNpVlanHwIfMap[pMplsHwVcInfo->u4PwL3Intf - 1].u4HwEgrObjIntf) != 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16123
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{0 /* 128 + 0 + 0 == 0 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16125
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Falling through to end of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16130
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16131
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{0 /* 128 + 0 + 0 == 0 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16147
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u2OutVlanId == 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16153
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{NpWrBcmMplsTnlEnable((UINT4)pMplsHwVcInfo->u2OutVlanId) != 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16160
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16161
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{1 /* 1 + 1 == 1 + 1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16161
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{(INT4)i4UnitId != -1 /* (INT4)-1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16164
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{IssuIsHwProgrammingAllowed() == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16165
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{i4RetVal != BCM_E_NONE}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16173
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16204
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{IssuIsHwProgrammingAllowed() == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16208
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Jumping back to the beginning of the loop.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16161
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Jumped back to beginning of loop.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16161
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{1 /* 1 + 1 == 1 + 1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16161
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{(INT4)i4UnitId != -1 /* (INT4)-1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16208
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Reached end of loop.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16209
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->u1PwRedflag == 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16214
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking false branch.}{{code{i4RetVal != 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16220
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16222
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{gModuleTrcLevel[NPAPI_MPLS].u1TrcLevel & 8}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16226
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{u4VpnId >= 4100}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16226
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{u4VpnId <= 6099U /* 4100 + (6099 - 4100) */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16226
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Falling through to end of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16226
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{End of if statement.}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16228
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->FecInfo.u4VpnSrcPhyPort >= 1868U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 + 0 + 64 + 1 + 1 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16228
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{pMplsHwVcInfo->FecInfo.u4VpnSrcPhyPort <= 1931U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 + 0 + 64 + 1 + 64 */}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16228
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Condition {0}, taking true branch.}{{code{((pMplsHwVcInfo->FecInfo.u4VpnSrcPhyPort >= 1868U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 + 0 + 64 + 1 + 1 */ && pMplsHwVcInfo->FecInfo.u4VpnSrcPhyPort <= 1931U /* 128 + 0 + 0 + 8 + (532 - (128 + 0 + 0)) + 20 + (532 - (128 + 0 + 0)) + (532 - (128 + 0 + 0) + (128 + 0 + 0) + 64 + 1 + (532 - (128 + 0 + 0)) + 128 + 100) - (532 - (128 + 0 + 0)) - 64 - 1 - (532 - (128 + 0 + 0)) - 128 + 100 + 0 + 10 + 0 + 0 + 0 + 300 + 100 + 100 + 0 + 0 + 0 + 0 + 64 + 1 + 64 */) ? 1 : 0) == 1}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 16230
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Calling {0} without checking return value (as is done elsewhere {1} out of {2} times).}{{code{NpUtilGetLifIndexFromVepIndex}}}{39}{40}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 6416
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Example {0}: }{1}}{t{{0} has its value checked in {1}.}{{code{NpUtilGetLifIndexFromVepIndex(i4Port, &u4PriLifindex)}}}{{code{1 == NpUtilGetLifIndexFromVepIndex(i4Port, &u4PriLifindex)}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 7564
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Example {0}: }{2}}{t{{0} has its value checked in {1}.}{{code{NpUtilGetLifIndexFromVepIndex(u4VepIfIndex, &u4PriLifindex)}}}{{code{1 == NpUtilGetLifIndexFromVepIndex(u4VepIfIndex, &u4PriLifindex)}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 26880
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Example {0}: }{3}}{t{{0} has its value checked in {1}.}{{code{NpUtilGetLifIndexFromVepIndex(pProfileParam->u4IfIndex, &u4LifIndex)}}}{{code{NpUtilGetLifIndexFromVepIndex(pProfileParam->u4IfIndex, &u4LifIndex) == 0}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 34058
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Example {0}: }{4}}{t{Assigning: {0} = return value from {1}.}{{code{i4RetVal}}}{{code{NpUtilGetLifIndexFromVepIndex(u4IfIndex, &BcmEndpointInfo.gport)}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 34061
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Example {0} (cont.): }{4}}{t{{0} has its value checked in {1}.}{{code{i4RetVal}}}{{code{0 == i4RetVal}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 25273
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Example {0}: }{5}}{t{Assigning: {0} = return value from {1}.}{{code{i4RetChk}}}{{code{NpUtilGetLifIndexFromVepIndex(u4ServiceId, &u4LifIndex)}}}}}}
+---
+Error_type: CHECKED_RETURN
+File Name: C:/Users/vaishaja/github_codereview/ToT/code_review_app/src/database/bcmdnxwr.c
+Line Number: 25274
+Function Name: NpWrFsMplsHwVpwsCreatePwVc
+Description (coverity tool output): {CovLStrv2{{t{Example {0} (cont.): }{5}}{t{{0} has its value checked in {1}.}{{code{i4RetChk}}}{{code{i4RetChk != 1}}}}}}
+---
